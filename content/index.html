@@ -1,0 +1,1024 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phitoe Automation Content - AI Content Generator Ultimate</title>
+  <meta name="description" content="Phitoe Automation Content adalah AI Content Generator Ultimate untuk membuat 11 aset marketing dan 30 hari stok konten dalam sekali klik. Promo IDR 55,000.">
+  <meta name="keywords" content="Phitoe Automation Content, AI content generator, generator konten AI, caption AI, script video AI, kalender konten, Gemini API, digital marketing automation">
+  <meta name="author" content="Phitoe">
+  <meta property="og:title" content="Phitoe Automation Content - Promo IDR 55,000">
+  <meta property="og:description" content="Generate 11 aset marketing, script video, caption, CTA, broadcast WA, email, landing page copy, dan 30 hari stok konten dalam sekali klik.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="phitoe-content-product-transparent.png">
+  <meta name="theme-color" content="#070914">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Phitoe Automation Content",
+    "description": "AI Content Generator Ultimate untuk menghasilkan 11 aset marketing dan 30 hari stok konten.",
+    "image": "phitoe-content-product-transparent.png",
+    "brand": { "@type": "Brand", "name": "Phitoe" },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "IDR",
+      "price": "55000",
+      "url": "https://yudtuber.github.io/membership/direct-link-forms/checkout.html?plan=Phitoe-Automation-Content&amount=55000",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #070914;
+      --panel: rgba(255,255,255,.075);
+      --panel-strong: rgba(255,255,255,.12);
+      --line: rgba(255,255,255,.15);
+      --text: #f8fbff;
+      --muted: #a7b1c3;
+      --cyan: #49e7ff;
+      --blue: #6998ff;
+      --violet: #9a73ff;
+      --pink: #ff5fd7;
+      --gold: #ffd36e;
+      --green: #48f0ad;
+      --ink: #070914;
+      --shadow: 0 30px 90px rgba(0,0,0,.42);
+      --radius: 8px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    body:before {
+      content: "";
+      position: fixed;
+      inset: -25%;
+      z-index: -4;
+      background:
+        radial-gradient(circle at 18% 20%, rgba(73,231,255,.34), transparent 26%),
+        radial-gradient(circle at 82% 16%, rgba(255,95,215,.22), transparent 28%),
+        radial-gradient(circle at 62% 82%, rgba(105,152,255,.24), transparent 31%),
+        radial-gradient(circle at 22% 78%, rgba(72,240,173,.16), transparent 26%),
+        linear-gradient(135deg, #070914 0%, #10132a 50%, #070914 100%);
+      animation: aurora 16s ease-in-out infinite alternate;
+      filter: saturate(1.18);
+    }
+    body:after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -3;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 58px 58px;
+      mask-image: linear-gradient(to bottom, black, transparent 82%);
+    }
+    @keyframes aurora {
+      from { transform: translate3d(-2%, -1%, 0) rotate(0deg) scale(1); }
+      to { transform: translate3d(2%, 2%, 0) rotate(5deg) scale(1.06); }
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { font: inherit; }
+    #particles {
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      opacity: .58;
+    }
+    .container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      background: rgba(7,9,20,.76);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 950;
+    }
+    .logo-img {
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
+      padding: 4px;
+      border-radius: 8px;
+      background: rgba(255,255,255,.94);
+      box-shadow: 0 0 36px rgba(73,231,255,.22);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .nav-links a:hover { color: var(--text); }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 0 18px;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      font-weight: 900;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      color: var(--ink);
+      background: linear-gradient(135deg, var(--gold), var(--pink) 45%, var(--cyan));
+      box-shadow: 0 18px 48px rgba(255,95,215,.22), inset 0 1px 0 rgba(255,255,255,.55);
+    }
+    .btn-ghost {
+      border-color: rgba(255,255,255,.18);
+      background: rgba(255,255,255,.07);
+      backdrop-filter: blur(16px);
+    }
+    .hero {
+      min-height: calc(100vh - 74px);
+      display: grid;
+      align-items: center;
+      padding: 72px 0 42px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      gap: 44px;
+      align-items: center;
+    }
+    .eyebrow, .mini-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--cyan);
+      border: 1px solid rgba(73,231,255,.28);
+      background: rgba(73,231,255,.085);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 850;
+    }
+    h1, h2, h3 { margin: 0; line-height: 1.05; letter-spacing: 0; }
+    h1 {
+      margin-top: 20px;
+      max-width: 880px;
+      font-size: clamp(42px, 7vw, 82px);
+    }
+    h2 { font-size: clamp(31px, 4vw, 54px); }
+    h3 { font-size: 21px; }
+    .gradient-text {
+      background: linear-gradient(100deg, var(--text), var(--cyan) 32%, var(--violet) 62%, var(--pink));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .lead {
+      max-width: 720px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 21px);
+    }
+    .proof-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+      color: #dce9fb;
+      font-size: 13px;
+    }
+    .proof-item {
+      border: 1px solid rgba(255,255,255,.13);
+      background: rgba(255,255,255,.06);
+      border-radius: 999px;
+      padding: 7px 11px;
+    }
+    .price-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      gap: 14px;
+      margin: 28px 0 18px;
+    }
+    .old-price {
+      color: #8492a6;
+      text-decoration: line-through;
+      font-size: 22px;
+      font-weight: 750;
+    }
+    .new-price {
+      color: var(--gold);
+      font-size: clamp(40px, 5vw, 60px);
+      font-weight: 950;
+      line-height: 1;
+    }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+    .countdown {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(72px, 1fr));
+      gap: 10px;
+      max-width: 460px;
+      margin-top: 24px;
+    }
+    .glass, .card, .stat, .timebox, .faq-item, .quote, .pricing-card, .dashboard, .before-after-card, .flow-node {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.095), rgba(255,255,255,.055));
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+    .timebox { padding: 12px; text-align: center; }
+    .timebox strong { display: block; font-size: 25px; line-height: 1; }
+    .timebox span { color: var(--muted); font-size: 12px; }
+    .visual-stack {
+      position: relative;
+      min-height: 620px;
+      display: grid;
+      place-items: center;
+      perspective: 1200px;
+    }
+    .visual-stack:before {
+      content: "";
+      position: absolute;
+      width: 84%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,95,215,.20), rgba(73,231,255,.18), transparent 64%);
+      filter: blur(10px);
+    }
+    .product {
+      position: relative;
+      z-index: 2;
+      width: min(610px, 100%);
+      filter: drop-shadow(0 34px 82px rgba(0,0,0,.48));
+      animation: floaty 5.5s ease-in-out infinite;
+    }
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0) rotate(-1deg); }
+      50% { transform: translateY(-15px) rotate(1deg); }
+    }
+    .dashboard {
+      position: absolute;
+      right: -10px;
+      bottom: 22px;
+      z-index: 3;
+      width: min(430px, 84%);
+      padding: 16px;
+      transform: rotateX(9deg) rotateY(-12deg) rotateZ(1deg);
+      background: linear-gradient(135deg, rgba(12,15,35,.95), rgba(24,18,48,.84));
+    }
+    .dash-top { display: flex; justify-content: space-between; gap: 10px; align-items: center; margin-bottom: 14px; }
+    .dash-dots { display: flex; gap: 6px; }
+    .dash-dots span { width: 8px; height: 8px; border-radius: 50%; background: var(--pink); opacity: .85; }
+    .dash-title { color: var(--muted); font-size: 12px; font-weight: 850; }
+    .dash-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 10px; }
+    .dash-panel {
+      min-height: 86px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 8px;
+      background: rgba(255,255,255,.055);
+      padding: 12px;
+      overflow: hidden;
+    }
+    .bar { height: 8px; border-radius: 999px; margin: 9px 0; background: linear-gradient(90deg, var(--cyan), var(--pink)); }
+    .bar:nth-child(2) { width: 72%; }
+    .bar:nth-child(3) { width: 54%; background: linear-gradient(90deg, var(--violet), var(--gold)); }
+    .pulse-dot {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      margin: 5px auto 0;
+      background: radial-gradient(circle, var(--pink), rgba(255,95,215,.16) 62%, transparent 64%);
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(.95); opacity: .8; }
+      50% { transform: scale(1.08); opacity: 1; }
+    }
+    section { padding: 88px 0; }
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    .section-head p { max-width: 620px; margin: 0; color: var(--muted); }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .card, .quote, .before-after-card { padding: 24px; }
+    .card, .quote, .pricing-card { transition: transform .22s ease, border-color .22s ease; }
+    .card:hover, .quote:hover, .pricing-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(73,231,255,.34);
+    }
+    .icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+      color: var(--ink);
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--cyan), var(--pink));
+      font-weight: 950;
+    }
+    .card p, .quote p, .before-after-card p { color: var(--muted); margin: 12px 0 0; }
+    .integration-cloud {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      margin-top: 28px;
+    }
+    .integration {
+      min-height: 74px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.06);
+      color: #dce9fb;
+      font-weight: 850;
+      transition: transform .22s ease, border-color .22s ease, background .22s ease;
+    }
+    .integration:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255,95,215,.44);
+      background: rgba(255,95,215,.10);
+    }
+    .stats-band {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(90deg, rgba(73,231,255,.10), rgba(154,115,255,.09), rgba(255,95,215,.10));
+    }
+    .stat { padding: 24px; text-align: center; }
+    .stat strong {
+      display: block;
+      color: var(--cyan);
+      font-size: clamp(34px, 4vw, 48px);
+      line-height: 1;
+    }
+    .stat span { display: block; margin-top: 8px; color: var(--muted); }
+    .before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .before-after-card.before { border-color: rgba(255,95,215,.28); }
+    .before-after-card.after { border-color: rgba(73,231,255,.32); }
+    .workflow-map {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      overflow: hidden;
+    }
+    .workflow-map:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      right: 5%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--cyan), var(--violet), var(--pink), transparent);
+      animation: flowline 2.5s linear infinite;
+    }
+    @keyframes flowline {
+      from { filter: hue-rotate(0deg); opacity: .55; }
+      to { filter: hue-rotate(80deg); opacity: 1; }
+    }
+    .flow-node {
+      position: relative;
+      z-index: 2;
+      min-height: 122px;
+      display: grid;
+      align-content: center;
+      padding: 18px;
+      text-align: center;
+    }
+    .flow-node strong { display: block; color: var(--cyan); margin-bottom: 6px; }
+    .check-list { padding: 0; margin: 18px 0 0; list-style: none; color: var(--muted); }
+    .check-list li { margin: 10px 0; }
+    .check-list li:before {
+      content: "\2713";
+      color: var(--green);
+      font-weight: 950;
+      margin-right: 9px;
+    }
+    .pricing-card {
+      position: relative;
+      overflow: hidden;
+      padding: 32px;
+    }
+    .pricing-card:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(73,231,255,.15), rgba(154,115,255,.08), rgba(255,95,215,.13));
+      pointer-events: none;
+    }
+    .pricing-card > * { position: relative; z-index: 1; }
+    .pricing-layout {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 24px;
+      align-items: center;
+    }
+    .badge {
+      display: inline-flex;
+      color: var(--ink);
+      background: linear-gradient(135deg, var(--gold), var(--pink));
+      border-radius: 999px;
+      padding: 7px 11px;
+      font-size: 12px;
+      font-weight: 950;
+    }
+    .testimonial-wrap { overflow: hidden; }
+    .testimonial-track {
+      display: flex;
+      gap: 16px;
+      animation: carousel 24s linear infinite;
+    }
+    .quote {
+      min-width: 360px;
+      flex: 0 0 360px;
+    }
+    @keyframes carousel {
+      from { transform: translateX(0); }
+      to { transform: translateX(calc(-360px * 3 - 48px)); }
+    }
+    .faq { display: grid; gap: 12px; }
+    .faq-button {
+      width: 100%;
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 0 18px;
+      color: var(--text);
+      background: transparent;
+      border: 0;
+      text-align: left;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .faq-button span:last-child { color: var(--cyan); font-size: 24px; }
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      color: var(--muted);
+      transition: max-height .26s ease;
+    }
+    .faq-content p { margin: 0; padding: 0 18px 18px; }
+    .faq-item.active .faq-content { max-height: 190px; }
+    .final-cta {
+      text-align: center;
+      padding: 56px 28px;
+      background:
+        linear-gradient(135deg, rgba(73,231,255,.15), rgba(154,115,255,.08), rgba(255,95,215,.13)),
+        rgba(255,255,255,.065);
+    }
+    .final-cta p { max-width: 720px; margin: 16px auto 0; color: var(--muted); }
+    footer {
+      padding: 34px 0 92px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+    }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .wa-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 70;
+      width: 62px;
+      height: 62px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #0fb20a;
+      box-shadow: 0 18px 42px rgba(66,240,168,.34);
+      border: 1px solid rgba(255,255,255,.38);
+    }
+    .wa-float img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .sticky-cta {
+      position: fixed;
+      left: 50%;
+      bottom: 18px;
+      z-index: 65;
+      width: min(640px, calc(100% - 112px));
+      transform: translateX(-50%) translateY(90px);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform .25s ease, opacity .25s ease;
+    }
+    .sticky-cta.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .sticky-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 10px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 10px;
+      background: rgba(7,9,20,.84);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 18px 48px rgba(0,0,0,.38);
+    }
+    .sticky-inner strong { color: var(--gold); }
+    [data-aos] {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .72s ease, transform .72s ease;
+    }
+    [data-aos].show { opacity: 1; transform: translateY(0); }
+    @media (max-width: 980px) {
+      .nav-links { display: none; }
+      .hero-grid, .pricing-layout, .before-after { grid-template-columns: 1fr; }
+      .visual-stack { min-height: 520px; }
+      .grid-3, .grid-4, .integration-cloud, .workflow-map { grid-template-columns: repeat(2, 1fr); }
+      .workflow-map:before { display: none; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 12px; }
+      .dashboard { right: 0; bottom: 0; }
+    }
+    @media (max-width: 620px) {
+      .container { width: min(100% - 28px, 1180px); }
+      .nav-inner { min-height: 66px; }
+      .brand span:last-child { max-width: 170px; overflow: hidden; text-overflow: ellipsis; }
+      .nav .btn { display: none; }
+      .btn { width: 100%; min-height: 52px; }
+      .cta-row { width: 100%; }
+      .countdown, .grid-2, .grid-3, .grid-4, .integration-cloud, .workflow-map { grid-template-columns: 1fr 1fr; }
+      .card, .quote, .pricing-card, .before-after-card { padding: 18px; }
+      section { padding: 64px 0; }
+      .hero { padding: 42px 0 34px; }
+      .visual-stack { min-height: 430px; }
+      .product { width: 112%; max-width: none; }
+      .dashboard { width: 92%; padding: 12px; }
+      .quote { min-width: 300px; flex-basis: 300px; }
+      .sticky-cta { width: calc(100% - 92px); }
+      .sticky-inner { display: block; }
+      .sticky-inner span { display: block; margin-bottom: 8px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Phitoe Automation Content">
+        <img class="logo-img" src="logo.png" alt="Logo Phitoe">
+        <span>Phitoe Content</span>
+      </a>
+      <div class="nav-links">
+        <a href="#fitur">Fitur</a>
+        <a href="#aset">11 Aset</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#pricing">Harga</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a class="btn btn-primary" href="https://yudtuber.github.io/membership/direct-link-forms/checkout.html?plan=Phitoe-Automation-Content&amount=55000" data-track="nav-buy">Beli Sekarang</a>
+    </div>
+  </nav>
+
+  <main id="home">
+    <header class="hero">
+      <div class="container hero-grid">
+        <div data-aos>
+          <span class="eyebrow">AI Content Generator Ultimate</span>
+          <h1>Generate 11 aset marketing & <span class="gradient-text">30 hari stok konten</span> dalam sekali klik.</h1>
+          <p class="lead">Phitoe Automation Content memangkas waktu strategi digital marketing dari berhari-hari menjadi hitungan detik untuk kreator, UMKM, marketer, agency, dan tim PR.</p>
+          <div class="proof-row">
+            <span class="proof-item">Gemini API Ready</span>
+            <span class="proof-item">Smart Simulation Mode</span>
+            <span class="proof-item">One-Click Copy</span>
+            <span class="proof-item">Batch 30 Hari</span>
+          </div>
+          <div class="price-row" aria-label="Harga promo">
+            <span class="old-price">IDR 187,000</span>
+            <span class="new-price">IDR 55,000</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://yudtuber.github.io/membership/direct-link-forms/checkout.html?plan=Phitoe-Automation-Content&amount=55000" data-track="hero-buy">Beli Sekarang</a>
+            <a class="btn btn-ghost" href="https://wa.me/+6285647678910" data-track="hero-whatsapp">Konsultasi WhatsApp</a>
+          </div>
+          <div class="countdown" aria-label="Countdown promo">
+            <div class="timebox"><strong id="days">00</strong><span>Hari</span></div>
+            <div class="timebox"><strong id="hours">00</strong><span>Jam</span></div>
+            <div class="timebox"><strong id="minutes">00</strong><span>Menit</span></div>
+            <div class="timebox"><strong id="seconds">00</strong><span>Detik</span></div>
+          </div>
+        </div>
+        <div class="visual-stack" data-aos>
+          <img class="product" src="phitoe-content-product-transparent.png" alt="Mockup produk 3D Phitoe Automation Content">
+          <div class="dashboard" aria-label="Mockup dashboard 3D">
+            <div class="dash-top">
+              <div class="dash-dots"><span></span><span></span><span></span></div>
+              <div class="dash-title">Studio Pro Live</div>
+            </div>
+            <div class="dash-grid">
+              <div class="dash-panel">
+                <strong>Content Output</strong>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <div class="dash-panel">
+                <strong>AI Mode</strong>
+                <div class="pulse-dot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="fitur">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Konten marketing sekelas agency, tanpa prompting rumit.</h2>
+          <p>Masukkan nama produk, target pasar, dan gaya bahasa. Sistem langsung menyusun ekosistem konten lengkap dalam 5-10 detik.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card" data-aos><div class="icon">AI</div><h3>One-Click Automation</h3><p>Parameter bisnis masuk, AI memproses headline, hook, script, caption, CTA, dan kalender konten.</p></article>
+          <article class="card" data-aos><div class="icon">2X</div><h3>Dual-Mode AI</h3><p>Pakai Gemini API untuk hasil dinamis atau mode simulasi cerdas untuk demo tanpa API key.</p></article>
+          <article class="card" data-aos><div class="icon">VO</div><h3>Tone Presisi</h3><p>Santai, profesional, hard selling, atau storytelling emosional sesuai karakter brand Anda.</p></article>
+          <article class="card" data-aos><div class="icon">CP</div><h3>One-Click Copy</h3><p>Setiap modul punya tombol salin cepat agar hasil langsung pindah ke media sosial atau tim produksi.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Integrasi & platform kerja modern.</h2>
+          <p>Dibuat untuk workflow marketing yang hidup di AI, social media, website, database, dan komunikasi pelanggan.</p>
+        </div>
+        <div class="integration-cloud" data-aos>
+          <div class="integration">OpenAI</div>
+          <div class="integration">Gemini</div>
+          <div class="integration">WhatsApp</div>
+          <div class="integration">TikTok</div>
+          <div class="integration">WordPress</div>
+          <div class="integration">Notion</div>
+          <div class="integration">Instagram</div>
+          <div class="integration">Reels</div>
+          <div class="integration">Shorts</div>
+          <div class="integration">Email</div>
+          <div class="integration">Landing Page</div>
+          <div class="integration">Content Calendar</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-band">
+      <div class="container grid-4">
+        <div class="stat" data-aos><strong data-count="10000">0</strong><span>ide workflow konten</span></div>
+        <div class="stat" data-aos><strong data-count="98" data-suffix="%">0</strong><span>faster dari workflow manual</span></div>
+        <div class="stat" data-aos><strong data-count="11">0</strong><span>aset strategis sekali klik</span></div>
+        <div class="stat" data-aos><strong data-count="30">0</strong><span>hari stok konten</span></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Before vs After</h2>
+          <p>Dari ide konten yang macet menjadi mesin produksi marketing yang terukur, konsisten, dan otomatis.</p>
+        </div>
+        <div class="before-after">
+          <article class="before-after-card before" data-aos>
+            <span class="mini-pill">Before</span>
+            <h3>Prompting manual & ide cepat habis</h3>
+            <p>Tim harus mencari ide, membuat hook, menulis script, merancang CTA, menyiapkan caption, dan menyusun kalender konten satu per satu.</p>
+          </article>
+          <article class="before-after-card after" data-aos>
+            <span class="mini-pill">After</span>
+            <h3>Satu input menjadi campaign lengkap</h3>
+            <p>Nama produk, target pasar, dan tone langsung berubah menjadi aset video, copywriting, WhatsApp, email, landing page, dan batch 30 hari.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="aset">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>11 aset marketing dalam 3 tab navigasi.</h2>
+          <p>Output dibuat terstruktur agar cepat dipakai oleh kreator, admin sosial media, copywriter, sales, dan tim produksi.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card" data-aos><div class="icon">01</div><h3>Judul & Ide Thumbnail</h3><p>Formula clickbait elegan lengkap dengan arahan visual thumbnail, ekspresi talent, warna font, dan elemen grafis.</p></article>
+          <article class="card" data-aos><div class="icon">02</div><h3>3 Variasi Hook</h3><p>Hook emosional, curiosity, dan solusi cepat untuk merebut perhatian di 3 detik pertama.</p></article>
+          <article class="card" data-aos><div class="icon">03</div><h3>Script & Storyboard</h3><p>Naskah 45 detik dengan timecode, VO, B-roll, angle kamera, pencahayaan, dan transisi.</p></article>
+          <article class="card" data-aos><div class="icon">04</div><h3>Caption & 15 Hashtag</h3><p>Caption storytelling interaktif plus kombinasi hashtag untuk TikTok, Instagram, dan Reels.</p></article>
+          <article class="card" data-aos><div class="icon">05</div><h3>3 Variasi CTA</h3><p>CTA soft selling, hard selling, dan engagement untuk tujuan konversi yang berbeda.</p></article>
+          <article class="card" data-aos><div class="icon">06</div><h3>Broadcast WA & Email</h3><p>Pesan WhatsApp berbasis FOMO dan email marketing profesional dengan formula AIDA.</p></article>
+          <article class="card" data-aos><div class="icon">07</div><h3>Landing Page Copy</h3><p>Hero headline, keunggulan utama, social proof, dan special offer CTA siap pakai.</p></article>
+          <article class="card" data-aos><div class="icon">08</div><h3>Batch 30 Hari</h3><p>30 ide harian, 30 hook viral, 30 judul, 30 CTA, dan rotasi hashtag harian.</p></article>
+          <article class="card" data-aos><div class="icon">09</div><h3>Content Calendar</h3><p>Rangkaian edukasi, pembuktian, tips, promo, dan storytelling agar posting tetap konsisten.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>How It Works</h2>
+          <p>Alurnya dibuat seperti studio SaaS modern: cepat, fokus, dan mudah diulang untuk banyak campaign.</p>
+        </div>
+        <div class="workflow-map">
+          <div class="flow-node" data-aos><strong>Input</strong><span>Nama produk, target pasar, dan tone.</span></div>
+          <div class="flow-node" data-aos><strong>AI Mode</strong><span>Gemini API atau simulasi cerdas.</span></div>
+          <div class="flow-node" data-aos><strong>Generate</strong><span>11 aset marketing diproses serentak.</span></div>
+          <div class="flow-node" data-aos><strong>Copy</strong><span>Salin cepat ke tim produksi.</span></div>
+          <div class="flow-node" data-aos><strong>Scale</strong><span>Batch kalender konten 30 hari.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Siapa yang wajib pakai?</h2>
+          <p>Produk ini paling terasa nilainya untuk orang yang harus menjaga produksi konten tetap hidup setiap hari.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card" data-aos><h3>Digital Marketer</h3><p>Menyusun strategi kalender konten bulanan klien dalam hitungan menit.</p></article>
+          <article class="card" data-aos><h3>UMKM</h3><p>Menghemat biaya copywriter dan scriptwriter terpisah untuk promosi harian.</p></article>
+          <article class="card" data-aos><h3>Content Creator</h3><p>Menjaga konsistensi Reels, Shorts, dan TikTok dengan ide yang tidak cepat habis.</p></article>
+          <article class="card" data-aos><h3>PR & Humas</h3><p>Mempercepat pengemasan kampanye informasi dengan bahasa yang tepat sasaran.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Bonus yang didapat</h2>
+          <p>Selain generator utama, halaman ini diposisikan untuk menjual value sebagai sistem konten siap scale.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card" data-aos><h3>Prompt Framework</h3><p>Formula headline, hook, caption, CTA, WA, email, dan landing copy.</p></article>
+          <article class="card" data-aos><h3>30-Day Calendar</h3><p>Template ritme edukasi, proof, tips, authority, dan selling post.</p></article>
+          <article class="card" data-aos><h3>Tone Library</h3><p>Santai, profesional, hard selling, dan storytelling emosional.</p></article>
+          <article class="card" data-aos><h3>Copy Kit</h3><p>Struktur copy yang siap ditempel ke campaign, broadcast, dan website.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="container">
+        <div class="pricing-card" data-aos>
+          <div class="pricing-layout">
+            <div>
+              <span class="badge">Promo Launch</span>
+              <h2 style="margin-top:16px">Phitoe Automation Content</h2>
+              <p class="lead">AI Content Generator Ultimate untuk membuat aset marketing strategis dan stok konten bulanan dengan workflow cepat.</p>
+              <div class="price-row">
+                <span class="old-price">IDR 187,000</span>
+                <span class="new-price">IDR 55,000</span>
+              </div>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="https://yudtuber.github.io/membership/direct-link-forms/checkout.html?plan=Phitoe-Automation-Content&amount=55000" data-track="pricing-buy">Beli Sekarang</a>
+                <a class="btn btn-ghost" href="https://wa.me/+6285647678910" data-track="pricing-whatsapp">Tanya via WhatsApp</a>
+              </div>
+            </div>
+            <div>
+              <h3>Termasuk dalam paket</h3>
+              <ul class="check-list">
+                <li>One-click generator untuk 11 aset marketing</li>
+                <li>Script video 45 detik lengkap dengan storyboard</li>
+                <li>Caption, hashtag, CTA, broadcast WA, dan email AIDA</li>
+                <li>Struktur copywriting landing page konversional</li>
+                <li>Batch kalender konten 30 hari</li>
+                <li>Mode Gemini API dan Smart Simulation Demo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimoni">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Testimoni carousel</h2>
+          <p>Kesan pengguna saat produksi konten berubah dari pekerjaan berat menjadi workflow cepat.</p>
+        </div>
+        <div class="testimonial-wrap" data-aos>
+          <div class="testimonial-track">
+            <article class="quote"><h3>Raka - Creator</h3><p>"Hook dan script video jadi tidak lagi mulai dari kosong. Tinggal edit rasa brand."</p></article>
+            <article class="quote"><h3>Dina - UMKM</h3><p>"Caption, CTA, dan broadcast WA jadi rapi. Promosi terasa lebih profesional."</p></article>
+            <article class="quote"><h3>Fajar - Marketer</h3><p>"Batch 30 hari membantu banget untuk pitching kalender konten klien."</p></article>
+            <article class="quote"><h3>Nadia - Social Media</h3><p>"One-click copy bikin output mudah dipindahkan ke tim desain dan posting."</p></article>
+            <article class="quote"><h3>Arman - Agency</h3><p>"Mode tone-nya praktis untuk membedakan brand premium, gaul, dan hard selling."</p></article>
+            <article class="quote"><h3>Yulia - Founder</h3><p>"Produksi konten tidak lagi jadi bottleneck harian."</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Garansi & FAQ</h2>
+          <p>Pertanyaan penting sebelum Anda mulai menggunakan Phitoe Automation Content.</p>
+        </div>
+        <div class="faq">
+          <div class="faq-item active" data-aos>
+            <button class="faq-button" type="button"><span>Apakah perlu API key?</span><span>+</span></button>
+            <div class="faq-content"><p>Tidak wajib untuk mencoba. Ada mode simulasi cerdas. Jika ingin hasil dinamis dan tak terbatas, Anda bisa menghubungkan Gemini API Key.</p></div>
+          </div>
+          <div class="faq-item" data-aos>
+            <button class="faq-button" type="button"><span>Apakah cocok untuk pemula?</span><span>+</span></button>
+            <div class="faq-content"><p>Cocok. Anda cukup memasukkan parameter dasar seperti nama produk, target pasar, dan tone of voice.</p></div>
+          </div>
+          <div class="faq-item" data-aos>
+            <button class="faq-button" type="button"><span>Output apa saja yang dihasilkan?</span><span>+</span></button>
+            <div class="faq-content"><p>Judul, thumbnail idea, hook, script, storyboard, caption, hashtag, CTA, broadcast WA, email AIDA, landing page copy, dan batch konten 30 hari.</p></div>
+          </div>
+          <div class="faq-item" data-aos>
+            <button class="faq-button" type="button"><span>Bagaimana cara membeli?</span><span>+</span></button>
+            <div class="faq-content"><p>Klik tombol Beli Sekarang, selesaikan checkout di Lynk.id, lalu ikuti instruksi akses produk setelah pembayaran.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="final-cta glass" data-aos>
+          <span class="eyebrow">Tinggikan standar pemasaran digital Anda</span>
+          <h2 style="margin-top:16px">Produksi konten tidak lagi menjadi beban.</h2>
+          <p>Dengan Phitoe Automation Content, konten menjadi aset pertumbuhan yang terukur, konsisten, dan otomatis.</p>
+          <div class="cta-row" style="justify-content:center">
+            <a class="btn btn-primary" href="https://yudtuber.github.io/membership/direct-link-forms/checkout.html?plan=Phitoe-Automation-Content&amount=55000" data-track="final-buy">Beli Sekarang - IDR 55,000</a>
+            <a class="btn btn-ghost" href="https://wa.me/+6285647678910" data-track="final-whatsapp">Chat WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>&copy; 2026 Phitoe Automation Content. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <div class="sticky-cta" id="stickyCta" aria-hidden="true">
+    <div class="sticky-inner">
+      <span>Promo Phitoe Content: <strong>IDR 55,000</strong></span>
+      <a class="btn btn-primary" href="https://yudtuber.github.io/membership/direct-link-forms/checkout.html?plan=Phitoe-Automation-Content&amount=55000" data-track="sticky-buy">Beli Sekarang</a>
+    </div>
+  </div>
+  <a class="wa-float" href="https://wa.me/+6285647678910" aria-label="WhatsApp" data-track="floating-whatsapp">
+    <img src="wa.png" alt="WhatsApp">
+  </a>
+
+  <script>
+    const promoEnd = new Date();
+    promoEnd.setDate(promoEnd.getDate() + 2);
+    promoEnd.setHours(23, 59, 59, 999);
+
+    function pad(value) {
+      return String(value).padStart(2, "0");
+    }
+
+    function updateCountdown() {
+      const now = new Date();
+      const distance = Math.max(0, promoEnd - now);
+      const days = Math.floor(distance / 86400000);
+      const hours = Math.floor((distance % 86400000) / 3600000);
+      const minutes = Math.floor((distance % 3600000) / 60000);
+      const seconds = Math.floor((distance % 60000) / 1000);
+      document.getElementById("days").textContent = pad(days);
+      document.getElementById("hours").textContent = pad(hours);
+      document.getElementById("minutes").textContent = pad(minutes);
+      document.getElementById("seconds").textContent = pad(seconds);
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    document.querySelectorAll(".faq-button").forEach((button) => {
+      button.addEventListener("click", () => {
+        button.closest(".faq-item").classList.toggle("active");
+      });
+    });
+
+    const counted = new WeakSet();
+    function animateCount(element) {
+      const target = Number(element.dataset.count || 0);
+      const suffix = element.dataset.suffix || "";
+      const duration = 1200;
+      const start = performance.now();
+      function tick(now) {
+        const progress = Math.min(1, (now - start) / duration);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const value = Math.round(target * eased);
+        element.textContent = target >= 1000 ? value.toLocaleString("id-ID") + "+" : value + suffix;
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          entry.target.querySelectorAll("[data-count]").forEach((counter) => {
+            if (!counted.has(counter)) {
+              counted.add(counter);
+              animateCount(counter);
+            }
+          });
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+    document.querySelectorAll("[data-aos], .stats-band").forEach((element) => revealObserver.observe(element));
+
+    const stickyCta = document.getElementById("stickyCta");
+    window.addEventListener("scroll", () => {
+      stickyCta.classList.toggle("show", window.scrollY > 620);
+    }, { passive: true });
+
+    const canvas = document.getElementById("particles");
+    const ctx = canvas.getContext("2d");
+    let particles = [];
+    function resizeCanvas() {
+      canvas.width = window.innerWidth * devicePixelRatio;
+      canvas.height = window.innerHeight * devicePixelRatio;
+      ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+      particles = Array.from({ length: Math.min(90, Math.floor(window.innerWidth / 16)) }, () => ({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        r: Math.random() * 1.8 + .4,
+        vx: (Math.random() - .5) * .24,
+        vy: (Math.random() - .5) * .24,
+        a: Math.random() * .55 + .18
+      }));
+    }
+    function drawParticles() {
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      particles.forEach((p) => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0 || p.x > window.innerWidth) p.vx *= -1;
+        if (p.y < 0 || p.y > window.innerHeight) p.vy *= -1;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(73,231,255," + p.a + ")";
+        ctx.fill();
+      });
+      requestAnimationFrame(drawParticles);
+    }
+    resizeCanvas();
+    drawParticles();
+    window.addEventListener("resize", resizeCanvas);
+
+    document.querySelectorAll("[data-track]").forEach((element) => {
+      element.addEventListener("click", () => {
+        console.log("CTA click:", element.dataset.track);
+      });
+    });
+  </script>
+</body>
+</html>
