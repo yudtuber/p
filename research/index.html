@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Research Center Pro - Real-Time Market Research Workspace</title>
+  <meta name="description" content="AI Research Center Pro membantu marketer, seller e-commerce, dan content creator menemukan winning product, keyword intent, dan ide konten FYP dari sinyal pasar real-time. Promo IDR 78,000.">
+  <meta name="keywords" content="AI Research Center Pro, winning product research, keyword research, content ideas, viral content research, Shopee research, TikTok research, YouTube research">
+  <meta name="author" content="Phitoe">
+  <meta property="og:title" content="AI Research Center Pro - Promo IDR 78,000">
+  <meta property="og:description" content="Workspace riset untuk keyword intent, winning product, viral hooks, opportunity score, dan sinyal pasar real-time.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="ai-research-center-product-transparent.png">
+  <meta name="theme-color" content="#050b18">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "AI Research Center Pro",
+    "description": "Workspace riset real-time untuk menemukan winning product, keyword intent, dan ide konten viral.",
+    "image": "ai-research-center-product-transparent.png",
+    "brand": { "@type": "Brand", "name": "Phitoe" },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "IDR",
+      "price": "78000",
+      "url": "http://lynk.id/yudtube/oymn7evyry1n/checkout",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #050b18;
+      --panel: rgba(255,255,255,.075);
+      --line: rgba(255,255,255,.15);
+      --text: #f7fbff;
+      --muted: #a7b5c8;
+      --cyan: #42e8ff;
+      --blue: #4d8dff;
+      --navy: #071326;
+      --green: #54f0b2;
+      --gold: #ffd66b;
+      --violet: #8d78ff;
+      --ink: #050b18;
+      --shadow: 0 30px 90px rgba(0,0,0,.42);
+      --radius: 8px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    body:before {
+      content: "";
+      position: fixed;
+      inset: -25%;
+      z-index: -4;
+      background:
+        radial-gradient(circle at 16% 18%, rgba(66,232,255,.33), transparent 26%),
+        radial-gradient(circle at 82% 14%, rgba(77,141,255,.24), transparent 28%),
+        radial-gradient(circle at 70% 82%, rgba(84,240,178,.18), transparent 32%),
+        radial-gradient(circle at 18% 78%, rgba(141,120,255,.20), transparent 30%),
+        linear-gradient(135deg, #050b18 0%, #0a1830 50%, #050b18 100%);
+      animation: aurora 16s ease-in-out infinite alternate;
+      filter: saturate(1.16);
+    }
+    body:after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -3;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 58px 58px;
+      mask-image: linear-gradient(to bottom, black, transparent 82%);
+    }
+    @keyframes aurora {
+      from { transform: translate3d(-2%, -1%, 0) rotate(0deg) scale(1); }
+      to { transform: translate3d(2%, 2%, 0) rotate(5deg) scale(1.06); }
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { font: inherit; }
+    #particles {
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      opacity: .55;
+    }
+    .container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      background: rgba(5,11,24,.76);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 950;
+    }
+    .logo-img {
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
+      padding: 4px;
+      border-radius: 8px;
+      background: rgba(255,255,255,.94);
+      box-shadow: 0 0 36px rgba(66,232,255,.22);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .nav-links a:hover { color: var(--text); }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 0 18px;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      font-weight: 900;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      color: var(--ink);
+      background: linear-gradient(135deg, var(--gold), var(--green) 52%, var(--cyan));
+      box-shadow: 0 18px 48px rgba(66,232,255,.23), inset 0 1px 0 rgba(255,255,255,.55);
+    }
+    .btn-ghost {
+      border-color: rgba(255,255,255,.18);
+      background: rgba(255,255,255,.07);
+      backdrop-filter: blur(16px);
+    }
+    .hero {
+      min-height: calc(100vh - 74px);
+      display: grid;
+      align-items: center;
+      padding: 72px 0 42px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      gap: 44px;
+      align-items: center;
+    }
+    .eyebrow, .mini-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--cyan);
+      border: 1px solid rgba(66,232,255,.28);
+      background: rgba(66,232,255,.085);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 850;
+    }
+    h1, h2, h3 { margin: 0; line-height: 1.05; letter-spacing: 0; }
+    h1 {
+      margin-top: 20px;
+      max-width: 890px;
+      font-size: clamp(42px, 7vw, 82px);
+    }
+    h2 { font-size: clamp(31px, 4vw, 54px); }
+    h3 { font-size: 21px; }
+    .gradient-text {
+      background: linear-gradient(100deg, var(--text), var(--cyan) 32%, var(--blue) 62%, var(--green));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .lead {
+      max-width: 720px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 21px);
+    }
+    .proof-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; color: #dce9fb; font-size: 13px; }
+    .proof-item {
+      border: 1px solid rgba(255,255,255,.13);
+      background: rgba(255,255,255,.06);
+      border-radius: 999px;
+      padding: 7px 11px;
+    }
+    .price-row { display: flex; flex-wrap: wrap; align-items: end; gap: 14px; margin: 28px 0 18px; }
+    .old-price { color: #8492a6; text-decoration: line-through; font-size: 22px; font-weight: 750; }
+    .new-price { color: var(--gold); font-size: clamp(40px, 5vw, 60px); font-weight: 950; line-height: 1; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+    .countdown { display: grid; grid-template-columns: repeat(4, minmax(72px, 1fr)); gap: 10px; max-width: 460px; margin-top: 24px; }
+    .glass, .card, .stat, .timebox, .faq-item, .quote, .pricing-card, .dashboard, .before-after-card, .flow-node {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.095), rgba(255,255,255,.055));
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+    .timebox { padding: 12px; text-align: center; }
+    .timebox strong { display: block; font-size: 25px; line-height: 1; }
+    .timebox span { color: var(--muted); font-size: 12px; }
+    .visual-stack {
+      position: relative;
+      min-height: 620px;
+      display: grid;
+      place-items: center;
+      perspective: 1200px;
+    }
+    .visual-stack:before {
+      content: "";
+      position: absolute;
+      width: 84%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(66,232,255,.22), rgba(77,141,255,.17), transparent 64%);
+      filter: blur(10px);
+    }
+    .product {
+      position: relative;
+      z-index: 2;
+      width: min(610px, 100%);
+      filter: drop-shadow(0 34px 82px rgba(0,0,0,.48));
+      animation: floaty 5.5s ease-in-out infinite;
+    }
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0) rotate(-1deg); }
+      50% { transform: translateY(-15px) rotate(1deg); }
+    }
+    .dashboard {
+      position: absolute;
+      right: -10px;
+      bottom: 22px;
+      z-index: 3;
+      width: min(430px, 84%);
+      padding: 16px;
+      transform: rotateX(9deg) rotateY(-12deg) rotateZ(1deg);
+      background: linear-gradient(135deg, rgba(7,19,38,.95), rgba(10,29,55,.84));
+    }
+    .dash-top { display: flex; justify-content: space-between; gap: 10px; align-items: center; margin-bottom: 14px; }
+    .dash-dots { display: flex; gap: 6px; }
+    .dash-dots span { width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); opacity: .85; }
+    .dash-title { color: var(--muted); font-size: 12px; font-weight: 850; }
+    .dash-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 10px; }
+    .dash-panel {
+      min-height: 86px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 8px;
+      background: rgba(255,255,255,.055);
+      padding: 12px;
+      overflow: hidden;
+    }
+    .bar { height: 8px; border-radius: 999px; margin: 9px 0; background: linear-gradient(90deg, var(--cyan), var(--green)); }
+    .bar:nth-child(2) { width: 72%; }
+    .bar:nth-child(3) { width: 54%; background: linear-gradient(90deg, var(--blue), var(--gold)); }
+    .score-ring {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin: 4px auto 0;
+      background: conic-gradient(var(--green) 0 82%, rgba(255,255,255,.12) 82% 100%);
+      color: var(--text);
+      font-weight: 950;
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%, 100% { transform: scale(.96); } 50% { transform: scale(1.06); } }
+    section { padding: 88px 0; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 32px; }
+    .section-head p { max-width: 620px; margin: 0; color: var(--muted); }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .card, .quote, .before-after-card { padding: 24px; }
+    .card, .quote, .pricing-card { transition: transform .22s ease, border-color .22s ease; }
+    .card:hover, .quote:hover, .pricing-card:hover { transform: translateY(-4px); border-color: rgba(66,232,255,.34); }
+    .icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+      color: var(--ink);
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--cyan), var(--green));
+      font-weight: 950;
+    }
+    .card p, .quote p, .before-after-card p { color: var(--muted); margin: 12px 0 0; }
+    .integration-cloud { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-top: 28px; }
+    .integration {
+      min-height: 74px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.06);
+      color: #dce9fb;
+      font-weight: 850;
+      transition: transform .22s ease, border-color .22s ease, background .22s ease;
+    }
+    .integration:hover { transform: translateY(-4px); border-color: rgba(66,232,255,.44); background: rgba(66,232,255,.10); }
+    .stats-band {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(90deg, rgba(66,232,255,.10), rgba(77,141,255,.09), rgba(84,240,178,.10));
+    }
+    .stat { padding: 24px; text-align: center; }
+    .stat strong { display: block; color: var(--cyan); font-size: clamp(34px, 4vw, 48px); line-height: 1; }
+    .stat span { display: block; margin-top: 8px; color: var(--muted); }
+    .before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .before-after-card.before { border-color: rgba(255,214,107,.28); }
+    .before-after-card.after { border-color: rgba(84,240,178,.32); }
+    .workflow-map { position: relative; display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; overflow: hidden; }
+    .workflow-map:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      right: 5%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--cyan), var(--blue), var(--green), transparent);
+      animation: flowline 2.5s linear infinite;
+    }
+    @keyframes flowline { from { filter: hue-rotate(0deg); opacity: .55; } to { filter: hue-rotate(80deg); opacity: 1; } }
+    .flow-node { position: relative; z-index: 2; min-height: 122px; display: grid; align-content: center; padding: 18px; text-align: center; }
+    .flow-node strong { display: block; color: var(--cyan); margin-bottom: 6px; }
+    .check-list { padding: 0; margin: 18px 0 0; list-style: none; color: var(--muted); }
+    .check-list li { margin: 10px 0; }
+    .check-list li:before { content: "\2713"; color: var(--green); font-weight: 950; margin-right: 9px; }
+    .pricing-card { position: relative; overflow: hidden; padding: 32px; }
+    .pricing-card:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(66,232,255,.15), rgba(77,141,255,.08), rgba(84,240,178,.13));
+      pointer-events: none;
+    }
+    .pricing-card > * { position: relative; z-index: 1; }
+    .pricing-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 24px; align-items: center; }
+    .badge { display: inline-flex; color: var(--ink); background: linear-gradient(135deg, var(--gold), var(--green)); border-radius: 999px; padding: 7px 11px; font-size: 12px; font-weight: 950; }
+    .testimonial-wrap { overflow: hidden; }
+    .testimonial-track { display: flex; gap: 16px; animation: carousel 24s linear infinite; }
+    .quote { min-width: 360px; flex: 0 0 360px; }
+    @keyframes carousel { from { transform: translateX(0); } to { transform: translateX(calc(-360px * 3 - 48px)); } }
+    .faq { display: grid; gap: 12px; }
+    .faq-button {
+      width: 100%;
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 0 18px;
+      color: var(--text);
+      background: transparent;
+      border: 0;
+      text-align: left;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .faq-button span:last-child { color: var(--cyan); font-size: 24px; }
+    .faq-content { max-height: 0; overflow: hidden; color: var(--muted); transition: max-height .26s ease; }
+    .faq-content p { margin: 0; padding: 0 18px 18px; }
+    .faq-item.active .faq-content { max-height: 210px; }
+    .final-cta {
+      text-align: center;
+      padding: 56px 28px;
+      background:
+        linear-gradient(135deg, rgba(66,232,255,.15), rgba(77,141,255,.08), rgba(84,240,178,.13)),
+        rgba(255,255,255,.065);
+    }
+    .final-cta p { max-width: 720px; margin: 16px auto 0; color: var(--muted); }
+    footer { padding: 34px 0 92px; color: var(--muted); border-top: 1px solid var(--line); }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .wa-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 70;
+      width: 62px;
+      height: 62px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #0fb20a;
+      box-shadow: 0 18px 42px rgba(66,240,168,.34);
+      border: 1px solid rgba(255,255,255,.38);
+    }
+    .wa-float img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .sticky-cta {
+      position: fixed;
+      left: 50%;
+      bottom: 18px;
+      z-index: 65;
+      width: min(640px, calc(100% - 112px));
+      transform: translateX(-50%) translateY(90px);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform .25s ease, opacity .25s ease;
+    }
+    .sticky-cta.show { transform: translateX(-50%) translateY(0); opacity: 1; pointer-events: auto; }
+    .sticky-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 10px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 10px;
+      background: rgba(5,11,24,.84);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 18px 48px rgba(0,0,0,.38);
+    }
+    .sticky-inner strong { color: var(--gold); }
+    [data-aos] { opacity: 0; transform: translateY(24px); transition: opacity .72s ease, transform .72s ease; }
+    [data-aos].show { opacity: 1; transform: translateY(0); }
+    @media (max-width: 980px) {
+      .nav-links { display: none; }
+      .hero-grid, .pricing-layout, .before-after { grid-template-columns: 1fr; }
+      .visual-stack { min-height: 520px; }
+      .grid-3, .grid-4, .integration-cloud, .workflow-map { grid-template-columns: repeat(2, 1fr); }
+      .workflow-map:before { display: none; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 12px; }
+      .dashboard { right: 0; bottom: 0; }
+    }
+    @media (max-width: 620px) {
+      .container { width: min(100% - 28px, 1180px); }
+      .nav-inner { min-height: 66px; }
+      .brand span:last-child { max-width: 170px; overflow: hidden; text-overflow: ellipsis; }
+      .nav .btn { display: none; }
+      .btn { width: 100%; min-height: 52px; }
+      .cta-row { width: 100%; }
+      .countdown, .grid-2, .grid-3, .grid-4, .integration-cloud, .workflow-map { grid-template-columns: 1fr 1fr; }
+      .card, .quote, .pricing-card, .before-after-card { padding: 18px; }
+      section { padding: 64px 0; }
+      .hero { padding: 42px 0 34px; }
+      .visual-stack { min-height: 430px; }
+      .product { width: 112%; max-width: none; }
+      .dashboard { width: 92%; padding: 12px; }
+      .quote { min-width: 300px; flex-basis: 300px; }
+      .sticky-cta { width: calc(100% - 92px); }
+      .sticky-inner { display: block; }
+      .sticky-inner span { display: block; margin-bottom: 8px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="AI Research Center Pro">
+        <img class="logo-img" src="logo.png" alt="Logo Phitoe">
+        <span>AI Research Center</span>
+      </a>
+      <div class="nav-links">
+        <a href="#riset">Riset</a>
+        <a href="#fitur">Fitur</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#pricing">Harga</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a class="btn btn-primary" href="http://lynk.id/yudtube/oymn7evyry1n/checkout" data-track="nav-buy">Beli Sekarang</a>
+    </div>
+  </nav>
+
+  <main id="home">
+    <header class="hero">
+      <div class="container hero-grid">
+        <div data-aos>
+          <span class="eyebrow">Real-time research workspace untuk marketer & seller</span>
+          <h1>Menemukan winning product dan ide FYP <span class="gradient-text">bukan insting. Itu data.</span></h1>
+          <p class="lead">AI Research Center Pro menarik sinyal pasar dari Google, YouTube, TikTok, Instagram, dan Shopee agar Anda lebih cepat membaca keyword intent, produk tren, dan format konten viral.</p>
+          <div class="proof-row">
+            <span class="proof-item">Keyword Intent</span>
+            <span class="proof-item">Opportunity Score</span>
+            <span class="proof-item">Viral Hook Mining</span>
+            <span class="proof-item">Enterprise Token Safety</span>
+          </div>
+          <div class="price-row" aria-label="Harga promo">
+            <span class="old-price">IDR 278,000</span>
+            <span class="new-price">IDR 78,000</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="http://lynk.id/yudtube/oymn7evyry1n/checkout" data-track="hero-buy">Beli Sekarang</a>
+            <a class="btn btn-ghost" href="https://wa.me/+6285647678910" data-track="hero-whatsapp">Konsultasi WhatsApp</a>
+          </div>
+          <div class="countdown" aria-label="Countdown promo">
+            <div class="timebox"><strong id="days">00</strong><span>Hari</span></div>
+            <div class="timebox"><strong id="hours">00</strong><span>Jam</span></div>
+            <div class="timebox"><strong id="minutes">00</strong><span>Menit</span></div>
+            <div class="timebox"><strong id="seconds">00</strong><span>Detik</span></div>
+          </div>
+        </div>
+        <div class="visual-stack" data-aos>
+          <img class="product" src="ai-research-center-product-transparent.png" alt="Mockup produk 3D AI Research Center Pro">
+          <div class="dashboard" aria-label="Mockup dashboard 3D">
+            <div class="dash-top">
+              <div class="dash-dots"><span></span><span></span><span></span></div>
+              <div class="dash-title">Market Signal Live</div>
+            </div>
+            <div class="dash-grid">
+              <div class="dash-panel">
+                <strong>Search Intent</strong>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <div class="dash-panel">
+                <strong>Score</strong>
+                <div class="score-ring">87</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="riset">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Riset real-time dari platform yang menentukan pasar.</h2>
+          <p>Berhenti menebak. Baca sinyal demand, tren, harga, hook, dan peluang dengan dashboard yang dibuat untuk keputusan cepat.</p>
+        </div>
+        <div class="integration-cloud" data-aos>
+          <div class="integration">Google</div>
+          <div class="integration">YouTube</div>
+          <div class="integration">TikTok</div>
+          <div class="integration">Instagram</div>
+          <div class="integration">Shopee</div>
+          <div class="integration">OpenAI</div>
+          <div class="integration">Gemini</div>
+          <div class="integration">WhatsApp</div>
+          <div class="integration">WordPress</div>
+          <div class="integration">Notion</div>
+          <div class="integration">API Token</div>
+          <div class="integration">Access Token</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-band">
+      <div class="container grid-4">
+        <div class="stat" data-aos><strong data-count="10000">0</strong><span>market signals</span></div>
+        <div class="stat" data-aos><strong data-count="98" data-suffix="%">0</strong><span>faster than manual research</span></div>
+        <div class="stat" data-aos><strong data-count="100" data-suffix="/100">0</strong><span>opportunity score</span></div>
+        <div class="stat" data-aos><strong data-count="5">0</strong><span>platform sumber riset</span></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Before vs After</h2>
+          <p>Dari riset manual yang lambat menjadi command center yang membaca sinyal pasar sebelum kompetitor bergerak.</p>
+        </div>
+        <div class="before-after">
+          <article class="before-after-card before" data-aos>
+            <span class="mini-pill">Before</span>
+            <h3>Insting, screenshot, dan tab browser berantakan</h3>
+            <p>Anda membandingkan keyword, produk, harga, sales, dan hook viral secara manual tanpa ukuran peluang yang jelas.</p>
+          </article>
+          <article class="before-after-card after" data-aos>
+            <span class="mini-pill">After</span>
+            <h3>Data masuk, AI memberi prioritas</h3>
+            <p>Keyword dibaca intent-nya, produk diberi opportunity score, dan konten viral dibedah hook serta formatnya.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="fitur">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>3 mesin riset utama untuk keputusan cepat.</h2>
+          <p>Dibuat khusus untuk marketer, seller e-commerce, dan content creator yang ingin menang dengan data.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card" data-aos><div class="icon">01</div><h3>Keyword Research</h3><p>AI membedah search intent: audiens sedang mencari edukasi, perbandingan, atau sudah siap transaksi.</p></article>
+          <article class="card" data-aos><div class="icon">02</div><h3>Product Research</h3><p>Pindai harga, sales, tren marketplace, dan opportunity score hingga 100 untuk menemukan winning product.</p></article>
+          <article class="card" data-aos><div class="icon">03</div><h3>Content Ideas</h3><p>Ekstrak hook dan format konten yang sudah bekerja di niche Anda, lalu modifikasi untuk peluang FYP.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>How It Works</h2>
+          <p>Workflow dirancang agar riset produk dan konten terasa seperti menggunakan command center SaaS premium.</p>
+        </div>
+        <div class="workflow-map">
+          <div class="flow-node" data-aos><strong>Input Niche</strong><span>Masukkan keyword, produk, atau kategori.</span></div>
+          <div class="flow-node" data-aos><strong>Pull Signal</strong><span>Ambil sinyal dari platform pasar.</span></div>
+          <div class="flow-node" data-aos><strong>AI Analyze</strong><span>Intent, tren, harga, sales, hook.</span></div>
+          <div class="flow-node" data-aos><strong>Score</strong><span>Prioritaskan peluang terbaik.</span></div>
+          <div class="flow-node" data-aos><strong>Action</strong><span>Eksekusi produk, konten, atau campaign.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Keamanan kelas enterprise.</h2>
+          <p>Akun sosial media Anda berharga. AI Research Center Pro dirancang tanpa meminta username atau password akun.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card" data-aos><div class="icon">TK</div><h3>Access Token</h3><p>Dukung integrasi access token dan API resmi agar koneksi stabil, aman, dan lebih sesuai aturan platform.</p></article>
+          <article class="card" data-aos><div class="icon">API</div><h3>Official API Ready</h3><p>Gunakan koneksi API untuk workflow riset yang lebih terukur dan mudah dikembangkan.</p></article>
+          <article class="card" data-aos><div class="icon">LG</div><h3>Audit Ready</h3><p>Riset dan data insight lebih mudah dilacak, dibanding keputusan yang tercecer di banyak spreadsheet.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Bonus yang didapat</h2>
+          <p>Paket ini bukan hanya tool, tapi sistem untuk mempercepat riset pasar dan eksekusi konten.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card" data-aos><h3>Keyword Gap Sheet</h3><p>Template membaca search intent dan celah pasar.</p></article>
+          <article class="card" data-aos><h3>Winning Product Matrix</h3><p>Skor peluang, harga, demand, dan potensi margin.</p></article>
+          <article class="card" data-aos><h3>Viral Hook Vault</h3><p>Formula hook yang bisa dimodifikasi per niche.</p></article>
+          <article class="card" data-aos><h3>Campaign Planner</h3><p>Alur action dari data riset ke campaign.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="container">
+        <div class="pricing-card" data-aos>
+          <div class="pricing-layout">
+            <div>
+              <span class="badge">Promo Launch</span>
+              <h2 style="margin-top:16px">AI Research Center Pro</h2>
+              <p class="lead">Workspace riset untuk menemukan winning product, keyword intent, dan ide konten viral dengan sinyal pasar yang lebih cepat.</p>
+              <div class="price-row">
+                <span class="old-price">IDR 278,000</span>
+                <span class="new-price">IDR 78,000</span>
+              </div>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="http://lynk.id/yudtube/oymn7evyry1n/checkout" data-track="pricing-buy">Beli Sekarang</a>
+                <a class="btn btn-ghost" href="https://wa.me/+6285647678910" data-track="pricing-whatsapp">Tanya via WhatsApp</a>
+              </div>
+            </div>
+            <div>
+              <h3>Termasuk dalam paket</h3>
+              <ul class="check-list">
+                <li>Keyword research dengan analisis niat beli</li>
+                <li>Product research dan opportunity score</li>
+                <li>Content ideas untuk hook dan format viral</li>
+                <li>Dashboard riset real-time lintas platform</li>
+                <li>Integrasi token/API resmi tanpa password akun</li>
+                <li>Bonus matrix riset produk, keyword, dan konten</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimoni">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Testimoni carousel</h2>
+          <p>Kesan pengguna saat riset berubah dari pekerjaan manual menjadi mesin keputusan berbasis data.</p>
+        </div>
+        <div class="testimonial-wrap" data-aos>
+          <div class="testimonial-track">
+            <article class="quote"><h3>Raka - Seller</h3><p>"Opportunity score membantu saya memilih produk tanpa sekadar ikut tren."</p></article>
+            <article class="quote"><h3>Dina - Marketer</h3><p>"Intent keyword jadi lebih jelas. Saya tahu mana yang edukasi dan mana yang siap beli."</p></article>
+            <article class="quote"><h3>Fajar - Creator</h3><p>"Bedah hook viral membuat ide konten tidak lagi mulai dari nol."</p></article>
+            <article class="quote"><h3>Nadia - Agency</h3><p>"Riset klien lebih cepat karena insight dari banyak platform bisa diprioritaskan."</p></article>
+            <article class="quote"><h3>Arman - E-Commerce</h3><p>"Saya bisa melihat produk, harga, dan sinyal demand dengan cara yang lebih rapi."</p></article>
+            <article class="quote"><h3>Yulia - Founder</h3><p>"Akhirnya riset tidak lagi menghabiskan energi tim sebelum eksekusi."</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Garansi & FAQ</h2>
+          <p>Pertanyaan penting sebelum mulai memakai AI Research Center Pro untuk riset produk dan konten.</p>
+        </div>
+        <div class="faq">
+          <div class="faq-item active" data-aos>
+            <button class="faq-button" type="button"><span>Apakah aplikasi meminta password akun?</span><span>+</span></button>
+            <div class="faq-content"><p>Tidak. Konsep keamanan mendukung access token dan API resmi, sehingga tidak perlu memasukkan username atau password sosial media.</p></div>
+          </div>
+          <div class="faq-item" data-aos>
+            <button class="faq-button" type="button"><span>Untuk siapa produk ini?</span><span>+</span></button>
+            <div class="faq-content"><p>Untuk marketer, seller e-commerce, content creator, agency, dan pebisnis digital yang ingin riset lebih cepat dan berbasis data.</p></div>
+          </div>
+          <div class="faq-item" data-aos>
+            <button class="faq-button" type="button"><span>Apa bedanya dengan riset manual?</span><span>+</span></button>
+            <div class="faq-content"><p>Riset manual mengandalkan banyak tab dan insting. AI Research Center Pro membantu membaca intent, tren, sales, hook, dan peluang secara lebih terstruktur.</p></div>
+          </div>
+          <div class="faq-item" data-aos>
+            <button class="faq-button" type="button"><span>Bagaimana cara membeli?</span><span>+</span></button>
+            <div class="faq-content"><p>Klik tombol Beli Sekarang, selesaikan checkout di Lynk.id, lalu ikuti instruksi akses produk setelah pembayaran.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="final-cta glass" data-aos>
+          <span class="eyebrow">Berhenti bekerja keras di area riset</span>
+          <h2 style="margin-top:16px">Biarkan AI memproses datanya.</h2>
+          <p>Gunakan AI Research Center Pro untuk membaca pasar lebih cepat, menemukan peluang lebih rapi, dan mengeksekusi konten atau produk dengan keyakinan yang lebih tinggi.</p>
+          <div class="cta-row" style="justify-content:center">
+            <a class="btn btn-primary" href="http://lynk.id/yudtube/oymn7evyry1n/checkout" data-track="final-buy">Beli Sekarang - IDR 78,000</a>
+            <a class="btn btn-ghost" href="https://wa.me/+6285647678910" data-track="final-whatsapp">Chat WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>&copy; 2026 AI Research Center Pro. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <div class="sticky-cta" id="stickyCta" aria-hidden="true">
+    <div class="sticky-inner">
+      <span>Promo AI Research Center: <strong>IDR 78,000</strong></span>
+      <a class="btn btn-primary" href="http://lynk.id/yudtube/oymn7evyry1n/checkout" data-track="sticky-buy">Beli Sekarang</a>
+    </div>
+  </div>
+  <a class="wa-float" href="https://wa.me/+6285647678910" aria-label="WhatsApp" data-track="floating-whatsapp">
+    <img src="wa.png" alt="WhatsApp">
+  </a>
+
+  <script>
+    const promoEnd = new Date();
+    promoEnd.setDate(promoEnd.getDate() + 2);
+    promoEnd.setHours(23, 59, 59, 999);
+    function pad(value) {
+      return String(value).padStart(2, "0");
+    }
+    function updateCountdown() {
+      const now = new Date();
+      const distance = Math.max(0, promoEnd - now);
+      const days = Math.floor(distance / 86400000);
+      const hours = Math.floor((distance % 86400000) / 3600000);
+      const minutes = Math.floor((distance % 3600000) / 60000);
+      const seconds = Math.floor((distance % 60000) / 1000);
+      document.getElementById("days").textContent = pad(days);
+      document.getElementById("hours").textContent = pad(hours);
+      document.getElementById("minutes").textContent = pad(minutes);
+      document.getElementById("seconds").textContent = pad(seconds);
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    document.querySelectorAll(".faq-button").forEach((button) => {
+      button.addEventListener("click", () => {
+        button.closest(".faq-item").classList.toggle("active");
+      });
+    });
+
+    const counted = new WeakSet();
+    function animateCount(element) {
+      const target = Number(element.dataset.count || 0);
+      const suffix = element.dataset.suffix || "";
+      const duration = 1200;
+      const start = performance.now();
+      function tick(now) {
+        const progress = Math.min(1, (now - start) / duration);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const value = Math.round(target * eased);
+        element.textContent = target >= 1000 ? value.toLocaleString("id-ID") + "+" : value + suffix;
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          entry.target.querySelectorAll("[data-count]").forEach((counter) => {
+            if (!counted.has(counter)) {
+              counted.add(counter);
+              animateCount(counter);
+            }
+          });
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+    document.querySelectorAll("[data-aos], .stats-band").forEach((element) => revealObserver.observe(element));
+
+    const stickyCta = document.getElementById("stickyCta");
+    window.addEventListener("scroll", () => {
+      stickyCta.classList.toggle("show", window.scrollY > 620);
+    }, { passive: true });
+
+    const canvas = document.getElementById("particles");
+    const ctx = canvas.getContext("2d");
+    let particles = [];
+    function resizeCanvas() {
+      canvas.width = window.innerWidth * devicePixelRatio;
+      canvas.height = window.innerHeight * devicePixelRatio;
+      ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+      particles = Array.from({ length: Math.min(90, Math.floor(window.innerWidth / 16)) }, () => ({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        r: Math.random() * 1.8 + .4,
+        vx: (Math.random() - .5) * .24,
+        vy: (Math.random() - .5) * .24,
+        a: Math.random() * .55 + .18
+      }));
+    }
+    function drawParticles() {
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      particles.forEach((p) => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0 || p.x > window.innerWidth) p.vx *= -1;
+        if (p.y < 0 || p.y > window.innerHeight) p.vy *= -1;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(66,232,255," + p.a + ")";
+        ctx.fill();
+      });
+      requestAnimationFrame(drawParticles);
+    }
+    resizeCanvas();
+    drawParticles();
+    window.addEventListener("resize", resizeCanvas);
+
+    document.querySelectorAll("[data-track]").forEach((element) => {
+      element.addEventListener("click", () => {
+        console.log("CTA click:", element.dataset.track);
+      });
+    });
+  </script>
+</body>
+</html>
